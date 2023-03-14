@@ -1,38 +1,306 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+root {
+  --darkColor: #2f2d52;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.darkColor {
+  background-color: var(--darkColor);
 }
+/* <!------------- register css -----------------> */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.formContainer {
+  background-color: #a7bcff;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.formWrapper {
+  background-color: white;
+  padding: 20px 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.logo {
+  color: #5d5b8d;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.title {
+  color: #5d5b8d;
+  font-size: 12px;
+}
+
+.formWrapper form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.formWrapper input {
+  padding: 15px;
+  border: none;
+  width: 250px;
+  border-bottom: 1px solid #a7bcff;
+  margin-bottom: 20px;
+}
+.formWrapper input::placeholder {
+  color: rgb(175, 175, 175);
+}
+.formWrapper button {
+  background-color: #7b96ec;
   color: white;
+  padding: 10px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+.formWrapper label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8da4f1;
+  font-size: 12px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.formWrapper img {
+  width: 32px;
+  margin: 5px 10px;
+}
+.formWrapper p {
+  color: #5d5b8d;
+  font-size: 12px;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+/* ------------home css-------------- */
+.home {
+  background-color: #a7bcff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 65%;
+  height: 80%;
+  display: flex;
+  overflow: hidden;
+}
+.sidebar {
+  flex: 1;
+  background-color: #3e3c61;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* <---------nav bar-----------> */
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #2f2d52;
+  height: 50px;
+  padding: 15px;
+  justify-content: space-between;
+  color: #ddddf7;
+}
+.logo {
+  margin-left: 5px;
+  font-weight: bold;
+}
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.user img {
+  background-color: #ddddf7;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.user button {
+  background-color: #5d5b8d;
+  color: #ddddf7;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* <-------------Search--------------> */
+
+.search {
+  border-bottom: 1px solid gray;
+}
+.searchForm {
+  padding: 10px;
+}
+.searchForm input {
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
+}
+.searchForm:placeholder {
+  color: lightgray;
+  font-size: 15px;
+}
+
+/* <------------user------------> */
+.userChat {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+.userChat:hover {
+  background-color: #2f2d52;
+}
+
+.userChat img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.userChatInfo span {
+  font-size: 18px;
+  font-weight: 500;
+}
+.userChatInfo p {
+  font-size: 14px;
+  color: lightgray;
+}
+
+/* <-------------chat----------------> */
+.chat {
+  flex: 2;
+}
+.chatInfo {
+  height: 50px;
+  background-color: #5d5b8d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  color: lightgray;
+}
+.chatIcons {
+  display: flex;
+  gap: 10px;
+}
+.chat img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+}
+/* <-------------Messages----------------> */
+
+.messages {
+  background-color: #ddddf7;
+  padding: 10px;
+  height: calc(100% - 160px);
+  overflow-y: scroll;
+}
+
+.messages::-webkit-scrollbar {
+  display: none;
+}
+.justNow {
+  border-radius: 50%;
+}
+.message {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  color: gray;
+  font-weight: 300;
+  overflow: hidden;
+}
+
+.messageContent {
+  max-width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.messageContent p {
+  padding: 10px 20px;
+  border-radius: 0px 10px 10px 10px;
+  max-width: max-content;
+  margin-bottom: 10px;
+}
+.messageContent img {
+  width: 50%;
+  height: auto;
+}
+.owner {
+  flex-direction: row-reverse;
+}
+.messageContent {
+  align-items: flex-end;
+}
+.message p {
+  background-color: #8da4f1;
+  color: white;
+  border-radius: 10px 0px 10px 10px;
+  margin-bottom: 10px;
+}
+.messageContent {
+  width: 100%;
+  height: 100%;
+}
+
+.input {
+  height: 50px;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.input input {
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #2f2d52;
+  font-size: 18px;
+}
+.input :placeholder {
+  color: lightgray;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.input img {
+  height: 24px;
+  cursor: pointer;
+}
+
+.input button {
+  border: none;
+  padding: 10px 15px;
+  color: white;
+  background-color: #8da4f1;
+  cursor: pointer;
 }
