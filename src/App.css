@@ -247,7 +247,7 @@ root {
   margin-bottom: 20px;
 }
 
-.messageInfo {
+.messageSender {
   display: flex;
   flex-direction: column;
   color: gray;
@@ -271,11 +271,20 @@ root {
   width: 50%;
   height: auto;
 }
-.owner {
+.owner > .messageContent {
   flex-direction: row-reverse;
 }
+
+.owner > img {
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 80%;
+}
+
 .messageContent {
-  align-items: flex-end;
+  align-items: flex-start;
 }
 .message p {
   background-color: #8da4f1;
