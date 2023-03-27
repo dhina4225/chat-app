@@ -237,10 +237,6 @@ root {
 .messages::-webkit-scrollbar {
   display: none;
 }
-/* .justNow {
-  border-radius: 50%;
-} */
-
 .message {
   display: flex;
   gap: 1px;
@@ -266,10 +262,7 @@ root {
   max-width: max-content;
   margin-bottom: 10px;
 }
-.messageContent img {
-  width: 50%;
-  height: auto;
-}
+
 .owner {
   flex-direction: row-reverse;
 }
