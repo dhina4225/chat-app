@@ -262,7 +262,7 @@ root {
 }
 .messageContent p {
   padding: 10px 20px;
-  /* border-radius: 0px 10px 10px 10px; */
+  border-radius: 8px 8px 8px 0px;
   max-width: max-content;
   margin-bottom: 10px;
 }
@@ -277,8 +277,8 @@ root {
 .owner > .messageContent {
   flex-direction: row-reverse;
 }
-.owner > p {
-  border-radius: 10px 0px 10px 10px;
+.owner > .messageContent p {
+  border-radius: 8px 8px 0px 8px;
 }
 .owner > img {
   right: 0;
@@ -293,7 +293,8 @@ root {
 .message p {
   background-color: #8da4f1;
   color: white;
-
+  max-width: 30vh;
+  overflow-wrap: break-word;
   margin-bottom: 10px;
   margin-right: 10px;
 }
