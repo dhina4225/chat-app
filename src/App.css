@@ -5,6 +5,7 @@
 }
 root {
   --darkColor: #2f2d52;
+  --clr-grenn-shade: #7ab8bf;
 }
 
 .darkColor {
@@ -13,14 +14,19 @@ root {
 /* <!------------- register css -----------------> */
 
 .formContainer {
-  background-color: #a7bcff;
+  background: url(./images/AdobeColorGradient\ gradient_coleccion-insignias-primavera-dibujadas-mano_23-2148095640.svg)
+    no-repeat;
+  background-size: cover !important;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .formWrapper {
-  background-color: white;
+  background-color: #7ab8bf8f;
+  box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 0px 1px,
+    rgb(255, 255, 255) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.54) 0px 1px 0px inset;
   padding: 20px 60px;
   border-radius: 10px;
   display: flex;
@@ -29,14 +35,16 @@ root {
   align-items: center;
 }
 .logo {
-  color: #5d5b8d;
+  color: white;
   font-weight: bold;
   font-size: 24px;
+  margin-left: 5px;
 }
 
-.title {
-  color: #5d5b8d;
-  font-size: 12px;
+.tittle {
+  color: #025159;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .formWrapper form {
@@ -48,17 +56,20 @@ root {
   padding: 15px;
   border: none;
   width: 250px;
-  border-bottom: 1px solid #a7bcff;
+  border-radius: 5px;
+  border-bottom: 1px solid #025159;
   margin-bottom: 20px;
+  outline: none;
 }
 .formWrapper input::placeholder {
   color: rgb(175, 175, 175);
 }
 .formWrapper button {
-  background-color: #7b96ec;
+  background-color: #025159;
   color: white;
   padding: 10px;
-  font-weight: bold;
+  font-weight: 700;
+  border-radius: 5px;
   border: none;
   cursor: pointer;
 }
@@ -66,7 +77,7 @@ root {
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #8da4f1;
+  color: #025159;
   font-size: 12px;
   cursor: pointer;
   margin-bottom: 20px;
@@ -83,7 +94,9 @@ root {
 
 /* ------------home css-------------- */
 .home {
-  background-color: #a7bcff;
+  background: url(./images/AdobeColorGradient\ gradient_coleccion-insignias-primavera-dibujadas-mano_23-2148095640.svg)
+    no-repeat;
+  background-size: cover !important;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -99,7 +112,7 @@ root {
 }
 .sidebar {
   flex: 1;
-  background-color: #3e3c61;
+  background-color: #7ab8bf;
   position: relative;
 }
 
@@ -107,7 +120,7 @@ root {
 .navbar {
   display: flex;
   align-items: center;
-  background-color: #2f2d52;
+  background-color: #025159;
   height: 50px;
   padding: 15px;
   justify-content: space-between;
@@ -116,10 +129,6 @@ root {
 .logout-btn {
   padding: 8px;
   font-size: 18px;
-}
-.logo {
-  margin-left: 5px;
-  font-weight: bold;
 }
 .user {
   display: flex;
@@ -136,15 +145,17 @@ root {
   object-fit: cover;
 }
 .user button {
-  background-color: #5d5b8d;
+  background-color: #7ab8bf;
   color: #ddddf7;
   font-size: 10px;
   margin-left: 10px;
+  border-radius: 5px;
+  font-weight: 600;
   border: none;
   cursor: pointer;
 }
 .user button:hover {
-  background-color: #383671;
+  background-color: #3e848c;
 }
 /* <-------------Search--------------> */
 
@@ -175,7 +186,7 @@ root {
   cursor: pointer;
 }
 .userChat:hover {
-  background-color: #2f2d52;
+  background-color: #025159;
 }
 
 .userChat img {
@@ -199,7 +210,7 @@ root {
 }
 .chatInfo {
   height: 50px;
-  background-color: #5d5b8d;
+  background-color: #3e848c;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -284,7 +295,7 @@ root {
   align-items: flex-start;
 }
 .message p {
-  background-color: #8da4f1;
+  background-color: #7ab8bf;
   color: white;
   max-width: 30vh;
   overflow-wrap: break-word;
@@ -329,6 +340,8 @@ root {
   border: none;
   padding: 10px 15px;
   color: white;
-  background-color: #8da4f1;
+  background-color: #3e848c;
+  border-radius: 5px;
+  margin-left: 10px;
   cursor: pointer;
 }
