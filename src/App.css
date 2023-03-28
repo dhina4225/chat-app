@@ -239,7 +239,7 @@ root {
 /* <-------------Messages----------------> */
 
 .messages {
-  background-color: #ddddf7;
+  background-color: #c4f9ff;
   padding: 10px;
   height: calc(100% - 160px);
   overflow-y: scroll;
