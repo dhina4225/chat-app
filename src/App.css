@@ -35,10 +35,10 @@ root {
   align-items: center;
 }
 .logo {
-  color: white;
-  font-weight: bold;
-  font-size: 24px;
-  margin-left: 5px;
+ height: 40px;
+ width: auto;
+ color: #3e848c;
+  margin-left: 0px;
 }
 
 .tittle {
@@ -239,7 +239,7 @@ root {
 /* <-------------Messages----------------> */
 
 .messages {
-  background-color: #c4f9ff;
+  background:url(./images/chat-bg.png);
   padding: 10px;
   height: calc(100% - 160px);
   overflow-y: scroll;
@@ -295,7 +295,7 @@ root {
   align-items: flex-start;
 }
 .message p {
-  background-color: #7ab8bf;
+  background: #7ab8bf;
   color: white;
   max-width: 30vh;
   overflow-wrap: break-word;
