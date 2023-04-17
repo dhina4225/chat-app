@@ -345,3 +345,13 @@ root {
   margin-left: 10px;
   cursor: pointer;
 }
+
+.profile-view{
+  text-decoration: none;
+  color: #fff;
+}
+
+.modal{
+  margin: 0;
+  padding:60px;
+}

@@ -36,9 +36,7 @@ const Search = () => {
     }
   };
 
-  const handleKey = (e) => {
-    e.code === "Enter" && handleSearch();
-  };
+ 0.
 
   const handleSelect = async () => {
     //check whether the group(chats in firestore) exists, if not create
