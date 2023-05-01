@@ -36,7 +36,9 @@ const Search = () => {
     }
   };
 
- 0.
+  const handleKey = (e) => {
+    e.code === "Enter" && handleSearch();
+  };
 
   const handleSelect = async () => {
     //check whether the group(chats in firestore) exists, if not create
@@ -70,7 +72,7 @@ const Search = () => {
           [combinedId + ".date"]: serverTimestamp(),
         });
       }
-    } catch (err) {}
+    } catch (err) { }
 
     setUser(null);
     setUsername("");
