@@ -8,21 +8,20 @@ const Profile = () => {
             <div className='form-control col-6'>
                 <img src="" alt="" />
                 <div className='form-group'>
-                    <label For="first-name">First-Name:
-                        <input type="text" placeholder='First Name' /></label>
-                    <label For="first-name">Last-Name:
-                        <input type="text" placeholder='Last Name' /></label>
+                    <label For="first-name">First-Name:</label>
+                        <input type="text" placeholder='First Name' />
+                    <label For="first-name">Last-Name:</label>
+                        <input type="text" placeholder='Last Name' />
                 </div>
                 <div className='form-group'>
-                    <label For="first-name">E-Mail:
-                        <input type="e-mail" /></label>
-                    <label For="first-name">Password:
-
-                        <input type="password" /></label>
+                    <label For="email">E-Mail:
+                        <input type="e-mail" name='email'/></label>
+                    <label For="password">Password:
+                    </label>
+                        <input type="password" name='password'/>
                 </div>
-                <label For="first-name">Phone-Number:
-
-                    <input type="number" placeholder='Phone Number' /></label>
+                <label For="phone-number">Phone-Number:</label>
+                    <input type="number" placeholder='Phone Number' />
                 <button className='save-btn'>Save Changes</button>
             </div>
         </div>
