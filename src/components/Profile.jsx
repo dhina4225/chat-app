@@ -1,11 +1,15 @@
 import React from 'react';
+import { MdClose } from "react-icons/md"
 
-
-const Profile = () => {
-
+const Profile = (setShowProfile) => {
     return (
-        <div>
-            <div className='form-control col-6'>
+        <div className="layer-opacity">
+        <div className='profile-container'>
+            <span className='close-btn' onClick={()=>setShowProfile(false)}>
+                <MdClose />
+                <span>close</span>
+            </span>
+            <div className='form-control'>
                 <img src="" alt="" />
                 <div className='form-group'>
                     <label For="first-name">First-Name:</label>
@@ -24,7 +28,8 @@ const Profile = () => {
                     <input type="number" placeholder='Phone Number' />
                 <button className='save-btn'>Save Changes</button>
             </div>
-        </div>
+            </div>
+            </div>
     );
 }
 
