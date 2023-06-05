@@ -1,12 +1,14 @@
 import React from 'react';
 import { MdClose } from "react-icons/md";
-import profile from "../images/profile.png"
+import profile from "../images/profile.png";
+import { Link } from 'react-router-dom';
 
-const Profile = (setShowProfile) => (
+const Profile = ( setShowProfile ) => (
+    
     <div className="layer-opacity">
         <div className='profile-container'>
             <div className='form-control'>
-                <span className='close-btn' onClick={() => setShowProfile(false)}>
+                <span className='close-btn' onClick={ () => setShowProfile(false) }>
                     <MdClose />
                     <span>close</span>
                 </span>
@@ -24,7 +26,7 @@ const Profile = (setShowProfile) => (
                 <label For="phone-number">Phone-Number:</label>
                     <input type="number" placeholder='Phone Number' />
                     
-                    <button className='save-btn' >Save Changes</button>
+                    <button className='save-btn' ><Link to="/home">Save Changes</Link></button>
                 </div>
                     
             </div>
