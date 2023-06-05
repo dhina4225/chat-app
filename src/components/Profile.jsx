@@ -6,7 +6,7 @@ const Profile = (setShowProfile) => (
     <div className="layer-opacity">
         <div className='profile-container'>
             <div className='form-control'>
-                <span className='close-btn' onClick={() => setShowProfile (false)}>
+                <span className='close-btn' onClick={() => setShowProfile(false)}>
                     <MdClose />
                     <span>close</span>
                 </span>
@@ -24,7 +24,7 @@ const Profile = (setShowProfile) => (
                 <label For="phone-number">Phone-Number:</label>
                     <input type="number" placeholder='Phone Number' />
                     
-                    <button className='save-btn'>Save Changes</button>
+                    <button className='save-btn' >Save Changes</button>
                 </div>
                     
             </div>
